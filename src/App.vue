@@ -1,9 +1,13 @@
 <template>
-    <h1>{{msg}}</h1>
+    <app-content></app-content>
 </template>
 
 <script>
+import AppContent from './components/AppContent.vue'
 export default {
+    components: {
+        'app-content': AppContent
+    },
     data(){
         return {
             msg : 'Hello world'
@@ -11,6 +15,8 @@ export default {
     }
 }
 </script>
+
+
 
 <style lang="scss">
     @import './assets/sass/main.scss';
